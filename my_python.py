@@ -3,6 +3,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    return 'Hello, this is my first application!' 
+
+@app.route('/')
+def template():
     return render_template('index.html')
 
 if __name__ == '__main__':
